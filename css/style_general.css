@@ -20,10 +20,11 @@ a {
 .header_block {
     background-image: url(../img/main_img.svg);
     background-repeat: no-repeat;
-    background-size: 1920px 1097px;
+    background-size: cover;
     max-width: 1920px;
     height: 1097px;
     margin: 0 auto;
+    background-attachment: fixed;
     
 }
 
