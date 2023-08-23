@@ -63,13 +63,112 @@
                 </div>
             </div>
             <a href="" class="button_view_all">View All Cakes</a>
+            <h2>Why Choose Us?</h2>
+            <div class="choose_us">
+                <img src="img/1.svg" alt="">
+                <div>
+                    <h3>Always Fresh Ingredients</h3>
+                    <p>Our cakes will delight you not only with the design, but also with the taste of the fillings! In addition to those presented in the catalog, you can order a cake according to your sketch.</p>
+                </div>
+                <img src="img/2.svg" alt="">
+                <div>
+                    <h3>Quick Delivery</h3>
+                    <p>We process orders quickly and try to fulfill them as quickly as possible. You can pick up the order yourself or we will deliver it by courier.</p>
+                </div>
+                <img src="img/3.svg" alt="">
+                <div>
+                    <h3>Talented Confectioners</h3>
+                    <p>We have sculptors, decorators, bakers, chocolatiers in our staff - that's why we can fulfill any of your ideas!</p>
+                </div>
+            </div>
+        </div>
+        <div class="upload_block">
+            <div class="contacts_form">
+                <div class="contacts_block_img">
+                    <img src="img/cake4.svg" alt=""> 
+              
+        
+                </div>      
+                <div class="form">
+                    <h2 class="form_title">Create your own unique cake</h2>
+                    <p class="form_text">If you would like a custom designed cake, please upload it using the contact form. We will calculate the cost and contact you.</p>
+                        <form action="sender.php" method="post" id="formmain" enctype="multipart/form-data"> 
+                             <div class="name">
+                                <input type="text" class="input"  name="name" placeholder="clear" required id="formname">
+                                <label class="text-field__label" for="name">Your name</label>
+                            </div>
+                            <div class="name">
+                                <input type="email" class="input" name="phone" placeholder="clear" required id="formemail">
+                                
+                                <label class="text-field__label" for="phone">Your phone number</label>
+                            </div>
+                            <div class="input-file-row">
+                                <label class="input-file">
+                                    <input type="file" name="file[]" multiple accept="image/*,image/jpeg" id ="example1" class="file">
+                                     <span class="input-file-btn">Upload Files</span>  
+                                   
+                            </label>
+                            <div class="input-file-list"></div>
+                            </div>
+                            
+                        
+                      
+                             <p class="title_form">Enter your message here...</p>
+                             <div class="send_status" id="border_textarea">
+                                <textarea name="text"  id="formtext" cols="30" rows="10" class="text_field"
+                                 placeholder="Message"></textarea>
+                                <div class="status"></div>
+                            </div>
+   
+                            <button type="button" class="send-form" onClick="setTimeout('clearform()', 2000 );" id="send-form">Send
+                            Message</button>
+   
+                        </form>
+                    </div>
+            </div>
         </div>
         
     </div>
 
 
 
-    
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="scryps/jquery.maskedinput.js"></script>
+    <script src="scryps/jquery.validate.min.js"></script>
+    <script src="scryps/script.js"></script>
    <script src="scryps/style_menu.js"></script> 
+   <script>
+    var dt = new DataTransfer();
+    
+    $('.input-file input[type=file]').on('change', function(){
+        let $files_list = $(this).closest('.input-file').next();
+        $files_list.empty();
+    
+        for(var i = 0; i < this.files.length; i++){
+            let new_file_input = '<div class="input-file-list-item">' +
+                '<span class="input-file-list-name">' + this.files.item(i).name + '</span>' +
+                '<a href="#" onclick="removeFilesItem(this); return false;" class="input-file-list-remove">x</a>' +
+                '</div>';
+            $files_list.append(new_file_input);
+            dt.items.add(this.files.item(i));
+        };
+        this.files = dt.files;
+    });
+    
+    function removeFilesItem(target){
+        let name = $(target).prev().text();
+        let input = $(target).closest('.input-file-row').find('input[type=file]');	
+        $(target).closest('.input-file-list-item').remove();	
+        for(let i = 0; i < dt.items.length; i++){
+            if(name === dt.items[i].getAsFile().name){
+                dt.items.remove(i);
+            }
+        }
+        input[0].files = dt.files;  
+    }
+    </script>
+    
+
+   
 </body>
 </html>
