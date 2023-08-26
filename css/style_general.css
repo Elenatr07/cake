@@ -1,6 +1,9 @@
 *, *::before, *::after {
     box-sizing: border-box;
   }
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
 
 
 html,
@@ -17,6 +20,11 @@ input[type="text"] {
     line-height: inherit; /* 1 */
     margin: 0; /* 2 */
   }
+  input {outline: 0 !important;}
+  :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
 
 a {
     text-decoration: none;
@@ -179,7 +187,7 @@ a {
     color: #000;
 
 }
-.cake_block h2 {
+.cake_block h2, .follow_us h2 {
     color: #000;
     font-family: 'Lemonada';
     font-size: 60px;
@@ -188,6 +196,10 @@ a {
     line-height: 150%; /* 67.5px */
     text-align: center;
     margin-top: 216px;
+}
+
+.follow_us h2 {
+    margin-top: 0;
 }
 .choose_us h3 {
     color: #1C0C09;
@@ -254,6 +266,7 @@ a {
     max-width: 1920px;
     margin: 0 auto;
     background: #DFD8D7;
+    max-height: 1043px;
 }
 .contacts_block_img img {
     width: 919px;
@@ -350,14 +363,14 @@ a {
   }
   
 .input-file-row {
-	display: inline-block;
+	display: flex;
     margin-top: 60px;
 }
 .input-file {
 	position: relative;
 	display: inline-block;
 }
-.input-file span {
+.input-file-btn, .input-file span {
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
@@ -383,6 +396,9 @@ a {
    
     flex-shrink: 0;
 }
+.input-file-btn {
+    margin-top: 80px;
+}
 .input-file input[type=file] {
 	position: absolute;
 	z-index: -1;
@@ -392,10 +408,7 @@ a {
 	height: 0;
 }
 
-/* Focus */
-.input-file input[type=file]:focus + span {
-	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-}
+
 
 /* Hover/Active */
 .input-file:hover span {
@@ -421,7 +434,49 @@ a {
 	color: red;
 	text-decoration: none;
 	display: inline-block;
-	margin-left: 5px;
+	margin-left: 10px;
+    margin-right: 10px;
 }
-  
+
+.center {
+    width: 401px;
+   display: none;
+    position: relative;
+    top: -75px;
+    left: 351px;
+    font-family: 'Nunito Sans';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: #E25F6A;
+  }
+#file_list {
+    margin-left: 25px;
+    max-height: 167px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 400px;
+}
+.follow_us {
+    background: #E1DDDA;
+    padding-top: 216px;
+}
+.follow_us p {
+    color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    width: 960px;
+    text-align: center;
+    margin: 0 auto;
+}
+.follow_us h2 span {
+    color: #E25F6A;
+}
+
   
