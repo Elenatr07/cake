@@ -2,14 +2,15 @@
     box-sizing: border-box;
   }
   * {
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent; 
+    margin: 0;
+    padding: 0;
   }
 
 
 html,
 body {
-    margin: 0px;
-    padding: 0px;
+   
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -66,15 +67,15 @@ a {
 }
 .contacts {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 48px;
-    width: 840px;
+    width: 374px;
     
 }
 .contacts a img {
     width: 33px;
     height: 33px;
-    margin-right: 27px;
+   
 }
 .main_slogan h1 {
     color: #FFF;
@@ -463,6 +464,8 @@ a {
 .follow_us {
     background: #E1DDDA;
     padding-top: 216px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 .follow_us p {
     color: #000;
@@ -478,5 +481,71 @@ a {
 .follow_us h2 span {
     color: #E25F6A;
 }
+.img_wrapper_block {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.img_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 62px;
+    padding-bottom: 120px;
+}
+.img_wrapper_block a img {
+    margin-top: 41px;
+}
+footer {
+    background: #1C0C09;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 124px;
+    padding-right: 124px;
+    padding-top: 40px;
+    padding-bottom: 89px;
+}
+.img1 {
+    width: 755px;
+    height: 755px;
+    margin-right: 41px;
+    display: block;
+    
+}
+.img2 {
+    width: 755px;
+    height: 513px;
+    margin-right: 41px;
+    display: block;
+}
+.img3 {
+    width: 875px;
+    height: 582px;
+    display: block;
+}
+.img4 {
+    width: 875px;
+    height: 683px;
+    display: block;
+}
+.for_footer {
+    max-width: 310px;
+    margin-top: 48px;
+    
+}
+
+.contacts_footer {
+    max-width: 374px;
+    justify-content: space-between;
+}
+.menu_footer {
+    max-width: 754px;
+}
+.contacts_footer a img {
+    margin-right: 0;
+}
+
+
 
   
