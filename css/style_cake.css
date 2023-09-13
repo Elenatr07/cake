@@ -1,0 +1,52 @@
+ .cake {
+   
+    background: #1C0C09;
+    background-image: none;
+    height: 100%;
+}
+.cake_section {
+    background: #E1DDDA;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+.jqcart-cart-label {
+    margin-top: 0;
+  
+}
+a.type:active, /* активная/посещенная ссылка */
+a.type:hover,  /* при наведении */
+a.type,
+a.header_logo {
+  text-decoration: none;
+ 
+}
+
+.type {
+ color: #1C0C09;
+font-family: 'Lemonada';
+font-size: 30px;
+font-style: normal;
+font-weight: 380;
+line-height: normal;
+}
+.active {
+    color: #E25F6A;
+font-family: "Lemonada";
+font-size: 30px;
+font-style: normal;
+font-weight: 380;
+line-height: normal;
+}
+.filter_option {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    
+}
+.type span {
+    color: #1C0C09;
+    margin-left: 10px;
+    margin-right: 10px;
+}
