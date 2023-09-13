@@ -43,10 +43,14 @@ line-height: normal;
     display: flex;
     justify-content: center;
     max-width: 1920px;
+    margin-bottom: 200px;
     
 }
 .type span {
     color: #1C0C09;
     margin-left: 10px;
     margin-right: 10px;
+}
+.cake_block_filter {
+    margin-bottom: 120px;
 }

@@ -10,7 +10,7 @@ $(function() {
         } else {
             $(".load_btn").hide();
         }*/
-        let item = $(".container_cards .cake_block");
+        let item = $(".container_cards .cake_block_filter");
        item.fadeOut("slow");
         item.each(function() {
             if ($(this).hasClass(category)) {
