@@ -23,25 +23,39 @@ flex-shrink: 0;
 background-image: url(../img/Ellipse.svg);
 background-size: 26px 26px;
 background-repeat: no-repeat;
+color: #FFF;
+font-family: 'Inter';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 
 .modal_img {
-    width: 636px;
-    height: 585px;
+    width: 800px;
+    
 }
 .modal_img img {
-    width: 636px;
-    height: 585px;
+    width: 720px;
+
 }
 .sum {
     display: flex;
-    height: 600px;
+    justify-content: center;
 }
 select {
     width: 500px;
     border: none;
     border-bottom: 1px solid;
+    background: #E1DDDA;
+    margin-bottom: 30px;
+    color: #1C0C09;
+    font-family: 'Nunito Sans';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
 }
 .modal-body {
     padding: 10px 90px 10px 90px;
@@ -52,18 +66,24 @@ select {
 .add_item {
     margin-top: 65px;
     border-radius: 30px;
-border: 2px solid #E25F6A;
-background: #E25F6A;
-width: 242px;
-height: 60px;
-flex-shrink: 0;
+    border: 2px solid #E25F6A;
+    background: #E25F6A;
+    width: 242px;
+    height: 60px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: 'Nunito Sans';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 .modal-dialog-scrollable .modal-body {
      overflow-y:hidden;
 }
 .form_cake {
     margin-left: 85px;
-    margin-top: 80px;
+    
 }
 .modal-header .close {
     padding: 48px;
@@ -81,6 +101,11 @@ flex-shrink: 0;
 
 .modal-content {
     border: 0;
+    height: 100vh;
+    background: #E1DDDA;
+}
+.modal-dialog-scrollable .modal-content {
+    min-height: 100vh;
 }
 .cake_block_wrapper {
     display: flex;
@@ -89,7 +114,7 @@ flex-shrink: 0;
 .btn {
     color: #000;
 font-family: Nunito Sans;
-font-size: 20px;
+font-size: 27px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -97,8 +122,27 @@ text-align: start;
 }
 .btn img {
     margin-bottom: 20px;
-    width: 287px;
-    height: 287px;
+    width: 382px;
+    height: 382px;
+}
+ .for_filter {
+    margin: 0 89px 0px 89px;
+}
+.form_cake h4 {
+    color: #E25F6A;
+font-family: 'Lemonada';
+font-size: 40px;
+font-style: normal;
+font-weight: 380;
+line-height: normal;
+}
+.form_cake p {
+    color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 @media (max-width:1000px) {

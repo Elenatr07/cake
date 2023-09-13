@@ -56,7 +56,13 @@ if (getItem.hasOwnProperty(key)) {
 
  // history.go(0);
  
- alert("добавлено в корзину");
+ //alert("добавлено в корзину");
+smoke.alert ("Thank you for your choice. The product has been added to the cart");
+$(document).on('click', '.smoke-dialog-buttons-ok', function(){
+  $('.modal').modal('hide');
+ $.jqCart('openCart'); 
+
+})
  /*function open() {
   $.jqCart('openCart'); 
  }

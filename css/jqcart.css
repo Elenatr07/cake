@@ -17,7 +17,7 @@
 }
 .jqcart-cart-label span {
     display: inline-block;
-    padding: 0px 9px 0px 9px;
+    padding: 2px 8px 2px 8px;
     letter-spacing: normal;
    /* background: #b8c6df;
     background: -moz-linear-gradient(top, #b8c6df 0%, #6d88b7 100%);
@@ -270,7 +270,15 @@
 .itog {
     pointer-events: none;
     border: none;
-    color: #E25F6A;
+    color: #1C0C09;
+    background: #E1DDDA;
+    font-family: 'Lemonada';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 380;
+    line-height: normal;
+   
+    padding-bottom: 30px;
 }
 
 .cake_block_wrapper {

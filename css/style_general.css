@@ -149,7 +149,7 @@ a {
 .cake_block_wrapper{
     display: flex;
     justify-content: space-around;
-    margin: 0 184px 60px 184px;
+    margin: 0 184px 0px 184px;
 }
 .img_cake {
     display: flex;
@@ -186,6 +186,7 @@ a {
     padding: 23px 39px;
     display: block;
     color: #000;
+    margin-top: 60px;
 
 }
 .cake_block h2, .follow_us h2 {

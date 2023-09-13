@@ -250,7 +250,7 @@ ul {
       right: 0;
       height: 100px;
       position: relative;
-      z-index: 99999;
+      z-index: 999;
       display: flex;
       justify-content: space-around;
       background: none;
