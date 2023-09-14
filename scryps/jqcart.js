@@ -15,7 +15,7 @@
     visibleLabel = false,
     label = $('<div class="jqcart-cart-label"><span class="jqcart-title"></span><span class="jqcart-total-cnt">0</span></div>'),
     modal = '<div class="jqcart-layout"><div class="jqcart-checkout">123</div></div>',
-    orderform = '<p class="jqcart-cart-title"></p><form class="jqcart-orderform"><p><input type="text" class="order_input" name="user_name" placeholder="Your name"></p><p><input type="text" class="order_input" name="user_phone" placeholder="Your phone number"></p><p><input type="text" class="order_input" name="user_mail" placeholder="Your e-mail"></p><p><input type="text" class="order_input" name="user_address" placeholder="Delivery Address"></p><p><h4 class="select_delivery_time">Delivery Time</h4><select  name="delivery_time"><option  disabled>select the delivery time</option><option value="8 am - 10 am" selected>8 am - 10 am</option><option value="10 am - 12 am">10 am - 12 am</option><option value="12 am - 14 am">12 am - 14 am</option><option value="14 am - 16 am">14 am - 16 am</option><option value="16 am - 18 am">16 am - 18 am</option></select></p><p><input type="submit" value="Отправить заказ"><input type="reset" id="reset" value="Вернуться к покупкам"></p></form>';
+    orderform = '<p class="jqcart-cart-title"></p><form class="jqcart-orderform"><p><input type="text" class="order_input" name="user_name" placeholder="Your name"></p><p><input type="text" class="order_input" name="user_phone" placeholder="Your phone number"></p><p><input type="text" class="order_input" name="user_mail" placeholder="Your e-mail"></p><p><input type="text" class="order_input" name="user_address" placeholder="Delivery Address"></p><p><h4 class="select_delivery_time">Delivery Time</h4><select class="select_form_order"  name="delivery_time"><option  disabled>select the delivery time</option><option value="8 am - 10 am" selected>8 am - 10 am</option><option value="10 am - 12 am">10 am - 12 am</option><option value="12 am - 14 am">12 am - 14 am</option><option value="14 am - 16 am">14 am - 16 am</option><option value="16 am - 18 am">16 am - 18 am</option></select></p><p><input class="send_order" type="submit" value="Place an Order"><input class="send_order"  type="reset" id="reset" value="Back to shopping"></p></form>';
   var opts = {
 		buttons: '.add_item',
 		cartLabel: 'body',
@@ -185,8 +185,8 @@
     sendOrder: function(e) {
       e.preventDefault();
       var $that = $(this);
-      if ($.trim($('[name=user_name]', $that).val()) === '' || $.trim($('[name=user_phone]', $that).val()) === '') {
-        $('<p class="jqcart-error">Пожалуйста, укажите свое имя и контактный телефон!</p>').insertBefore($that).delay(3000).fadeOut();
+      if ($.trim($('[name=user_name]', $that).val()) === '' || $.trim($('[name=user_phone]', $that).val()) === '' || $.trim($('[name=user_mail]', $that).val()) ==='') {
+        $('<p class="jqcart-error">Please provide your name, contact phone number and e-mail!</p>').insertBefore($that).delay(3000).fadeOut();
         return false;
       }
       $.ajax({

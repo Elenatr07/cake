@@ -12,7 +12,7 @@ $userdata - данные заказчика
 
 
 // Заголовок письма
-$subject = 'Заказ от '.date('d.m.Y').'г.';
+$subject = 'Order from "Bakery & More" from  <'.$userdata['user_mail'].'> ' .date('d.m.Y');
 // ваш Email
 $admin_mail = 'energotr07@yandex.ru';
 $user_mail = $_POST['user_mail'];
@@ -35,7 +35,7 @@ foreach($orderlist as $id => $item_data) {
 	<tr>
 		<td style="border: 1px solid #333333; padding: 5px;">'.$item_data['id'].'</td>
 		<td style="border: 1px solid #333333;"><img src="'.$item_data['img'].'" alt="" style="max-width: 64px; max-height: 64px;"></td>
-		<td style="border: 1px solid #333333; padding: 5px;">'.$item_data['title'].'</td>
+		<td style="border: 1px solid #333333; padding: 5px;">'.$item_data['title'].' '.$item_data['weight'].' '.$item_data['filling'].''.$item_data['delivery'].'</td>
 		<td style="border: 1px solid #333333; padding: 5px;">'.$item_data['price'].'</td>
 		<td style="border: 1px solid #333333; padding: 5px;">'.$item_data['count'].'</td>
 	</tr>';
@@ -53,17 +53,17 @@ $body = '
   <title>'.$subject.'</title>
 </head>
 <body>
-  <p>Информация о заказчике:</p>
+  <p>Customer Information:</p>
 	<ul>
-		<li><b>Ф.И.О.:</b> '.$userdata['user_name'].'</li>
-		<li><b>Тел.:</b> '.$userdata['user_phone'].'</li>
+		<li><b>User name.:</b> '.$userdata['user_name'].'</li>
+		<li><b>User phone:</b> '.$userdata['user_phone'].'</li>
 		<li><b>Email:</b> '.$userdata['user_mail'].'</li>
-		<li><b>Адрес:</b> '.$userdata['user_address'].'</li>
-		<li><b>Комментарий:</b> '.$userdata['user_comment'].'</li>
+		<li><b>delivery adress:</b> '.$userdata['user_address'].'</li>
+		<li><b>Delivery time:</b> '.$userdata['delivery_time'].'</li>
 	</ul>
-	<p>Информация о заказае:</p>
+	<p>Order information:</p>
   '.$tbl.'
-	<p>Письмо создано автоматически. Пожалуйста, не отвечайте на него, т.к. все ушли на пляж!</p>
+	<p>The email was created automatically. Please do not answer it</p>
 </body>
 </html>';
 
@@ -71,7 +71,7 @@ $body = '
 $headers   = []; // или $headers = array() для версии ниже 5.4
 $headers[] = 'MIME-Version: 1.0'; // Обязательный заголовок
 $headers[] = 'Content-type: text/html; charset=utf-8'; // Обязательный заголовок. Кодировку изменить при необходимости
-$headers[] = 'From: Best Shop <noreply@best-shop.piva.net>'; // От кого
+$headers[] = 'From: Bakery & More'; // От кого
 $headers[] = 'Bcc: Admin <'.$admin_mail.'>'; // скрытая копия админу сайта, т.е. вам
 $headers[] = 'X-Mailer: PHP/'.phpversion();
 // Отправка

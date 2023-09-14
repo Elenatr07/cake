@@ -35,7 +35,7 @@
 .jqcart-cart-label .jqcart-title {
     
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  /*  border-bottom-left-radius: 10px;*/
    
     text-align: left;
 }
@@ -69,10 +69,9 @@
     padding: 70px;
     vertical-align: middle;
     border-radius: 10px;
-    background-color: white;
+    background: #E1DDDA;
     box-shadow: 0 0 7px 5px rgba(0, 0, 0, .3);
     width: 1100px;
-    height: 1211px;
 }
 /* Сообщение "Корзина пуста" */
 .jqcart-empty-cart {
@@ -139,6 +138,7 @@
    border: none;
     border-radius: 5px;
     vertical-align: middle;
+    background: #E1DDDA;
 }
 .jqcart-manage-order .jqcart-small-td {
   width: 5%;
@@ -191,8 +191,8 @@
 /* Кнопка удаления отдельного товара из корзины */
 .jqcart-del-item {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     font-family: Arial;
     text-align: center;
     color: #FFF;
@@ -201,15 +201,14 @@
 .jqcart-del-item:before {
     display: inline-block;
     content: 'X';
-    vertical-align: text-bottom;
     background: #E25F6A;
     width: 30px;
     height: 30px;
-    border: 1px solid;
     border-radius: 30px;
     text-align: center;
-    font-size: 16px;
-    padding: 3px 2px;
+    font-size: 14px;
+    padding: 5px 0px;
+    font-family: 'Nunito Sans';
 }
 .jqcart-del-item:hover {
     color: #F00;
@@ -390,8 +389,42 @@
     font-weight: 600;
     line-height: 150%; /* 30px */
     border-bottom: 1px solid #000 ;
+    background: #E1DDDA;
 
 }
+.select_delivery_time {
+    color: #1C0C09;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    margin-top: 35px;
+}
+
+.select_form_order {
+    color: #1C0C09;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    width: 960px;
+}
+.send_order {
+    border-radius: 30px;
+    border: 2px solid #E25F6A;
+    background: #E25F6A;
+    width: 245px;
+    height: 60px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: 'Nunito Sans';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+        }
 @media print {
   * {
     margin: 0;
