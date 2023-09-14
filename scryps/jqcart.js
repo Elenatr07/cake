@@ -15,7 +15,7 @@
     visibleLabel = false,
     label = $('<div class="jqcart-cart-label"><span class="jqcart-title"></span><span class="jqcart-total-cnt">0</span></div>'),
     modal = '<div class="jqcart-layout"><div class="jqcart-checkout">123</div></div>',
-    orderform = '<p class="jqcart-cart-title">Контактная информация:</p><form class="jqcart-orderform"><p><label>ФИО:</label><input type="text" name="user_name"></p><p><label>Телефон:</label><input type="text" name="user_phone"></p><p><label>Email:</label><input type="text" name="user_mail"></p><p><label>Адрес:</label><input type="text" name="user_address"></p><p><label>Коментарий:</label><textarea name="user_comment"></textarea></p><p><input type="submit" value="Отправить заказ"><input type="reset" id="reset" value="Вернуться к покупкам"></p></form>';
+    orderform = '<p class="jqcart-cart-title"></p><form class="jqcart-orderform"><p><input type="text" class="order_input" name="user_name" placeholder="Your name"></p><p><input type="text" class="order_input" name="user_phone" placeholder="Your phone number"></p><p><input type="text" class="order_input" name="user_mail" placeholder="Your e-mail"></p><p><input type="text" class="order_input" name="user_address" placeholder="Delivery Address"></p><p><h4 class="select_delivery_time">Delivery Time</h4><select  name="delivery_time"><option  disabled>select the delivery time</option><option value="8 am - 10 am" selected>8 am - 10 am</option><option value="10 am - 12 am">10 am - 12 am</option><option value="12 am - 14 am">12 am - 14 am</option><option value="14 am - 16 am">14 am - 16 am</option><option value="16 am - 18 am">16 am - 18 am</option></select></p><p><input type="submit" value="Отправить заказ"><input type="reset" id="reset" value="Вернуться к покупкам"></p></form>';
   var opts = {
 		buttons: '.add_item',
 		cartLabel: 'body',
@@ -150,7 +150,7 @@
       var subtotal = 0,
 			cartHtml = '';
       cartData = actions.getStorage();
-      orderPreview = '<p class="jqcart-cart-title">Корзина <span class="jqcart-print-order"></span></p><div class="jqcart-table-wrapper"><div class="jqcart-manage-order"><div class="jqcart-thead"><div>ID</div><div></div><div>Наименование</div><div>Цена</div><div>Кол-во</div><div>Сумма</div><div></div></div>';
+      orderPreview = '<p class="jqcart-cart-title">Your Order<span class="jqcart-print-order"></span></p><div class="jqcart-table-wrapper"><div class="jqcart-manage-order"><div class="jqcart-thead"><div></div><div>Name</div><div>Quantity</div><div>Amount</div><div></div></div>';
       var key, sum = 0;
       for (key in cartData) {
         if (cartData.hasOwnProperty(key)) {
@@ -159,19 +159,19 @@
 					
           orderPreview += '<div class="jqcart-tr" data-id="' + cartData[key].id + '">';
 					orderPreview += '<div class="jqcart-small-td">' + cartData[key].id + '</div>';
-					orderPreview += '<div class="jqcart-small-td jqcart-item-img"><img src="' + cartData[key].img + '" alt=""></div>';
+					orderPreview += '<div class="jqcart-item-img"><img src="' + cartData[key].img + '" alt=""></div>';
           orderPreview += '<div class="jqcart-item-name">' + '<p class="item_name_title">' + cartData[key].title + '</p>' + '\r\n' + '<p class="item_name_weight">' + cartData[key].weight +'</p>' + '<p class="item_name_filling">' + cartData[key].filling + '</p>' + '<p class="item_name_delivery">' + cartData[key].delivery + '</p>' + '</div>';
           orderPreview += '<div class="jqcart-price">' + cartData[key].price + '</div>';
           orderPreview += '<div><span class="jqcart-incr" data-incr="-1">&#8211;</span><input type="text" class="jqcart-amount" value="' + cartData[key].count + '"><span class="jqcart-incr" data-incr="1">+</span></div>';
-          orderPreview += '<div class="jqcart-sum">' + sum + ' ' + opts.currency + '</div>';
-					orderPreview += '<div class="jqcart-small-td"><span class="jqcart-del-item" id="del"></span></div>';
+          orderPreview += '<div class="jqcart-sum">' + opts.currency + '' + sum + ' </div>';
+					orderPreview += '<div class="jqcart-del-item" id="del"></div>';
           orderPreview += '</div>';
         }
       }
       orderPreview += '</div></div>';
-      orderPreview += '<div class="jqcart-subtotal">Итого: <strong>' + subtotal + '</strong> ' + opts.currency + '</div>';
-      orderPreview += '<button id="clear">Очистить корзину (вызов метода clearCart)</button>';
-			orderPreview += '<button id="cancel">Закрыть корзину</button>'
+      orderPreview += '<div class="jqcart-subtotal">Total: ' + opts.currency + '<strong>' + subtotal + '</strong> </div>';
+      orderPreview += '<button class="clear_cart" id="clear">Clear cart</button> ';
+		//	orderPreview += '<button id="cancel">Закрыть корзину</button>'
 			cartHtml = subtotal ? (orderPreview + orderform) : '<h2 class="jqcart-empty-cart">Корзина пуста</h2>';
       $(modal).appendTo('body').find('.jqcart-checkout').html(cartHtml);
     },

@@ -222,7 +222,7 @@ a {
 .choose_us {
     display: flex;
     max-width: 1736px;
-    margin: 0 auto;
+    margin: 75px auto 0 auto;
 }
 .choose_us img {
     margin-right: 27px;

@@ -66,7 +66,7 @@
 .jqcart-checkout {
     display: inline-block;
     width: 80%;
-    padding: 10px;
+    padding: 70px;
     vertical-align: middle;
     border-radius: 10px;
     background-color: white;
@@ -87,11 +87,16 @@
 /* Таблица с заказанными товарами */
 .jqcart-cart-title {
 	  position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 1.2em;
     font-weight: bold;
     text-align: left;
-    color: #6d88b7;
+    color: #E25F6A;
+    font-family: 'Lemonada';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 380;
+    line-height: normal;
 }
 .jqcart-cart-title .jqcart-print-order {
   position: absolute;
@@ -122,16 +127,16 @@
 .jqcart-manage-order > div > div {
     display: table-cell;
     padding: 5px;
-    border: 1px solid #CCC;
+    border-bottom: 2px solid #E25F6A;
     vertical-align: middle;
 }
 .jqcart-manage-order > div > div input {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 30px;
     padding: 2px;
     text-align: center;
-    border: 1px solid #CCC;
+   border: none;
     border-radius: 5px;
     vertical-align: middle;
 }
@@ -139,8 +144,8 @@
   width: 5%;
 }
 .jqcart-manage-order .jqcart-item-img img {
-  max-width: 64px;
-  max-height: 64px;
+  max-width: 200px;
+  max-height: 200px;
 }
 .jqcart-thead {
     font-weight: bold;
@@ -148,19 +153,40 @@
 .jqcart-thead div {
     text-align: center;
 }
+.jqcart-thead div:first-child {
+    width: 200px;
+}
+.jqcart-thead div:nth-child(3) {
+    width: 155px;
+}
 .jqcart-subtotal {
     font-size: 1.2em;
     text-align: right;
+    color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 58px;
+    margin-top: 20px;
 }
 .jqcart-incr {
     display: inline-block;
     font-size: 1.1em;
-    padding: 5px;
+    padding: 0px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    border-radius: 30px;
+    border: 1px solid #E25F6A;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
 }
 /* Кнопка удаления отдельного товара из корзины */
 .jqcart-del-item {
@@ -169,16 +195,21 @@
     height: 20px;
     font-family: Arial;
     text-align: center;
-    border: 2px solid #F00;
-    background-color: #f00;
     color: #FFF;
-    border-radius: 50%;
     cursor: pointer;
 }
 .jqcart-del-item:before {
-  display: inline-block;
-  content: 'X';
-  vertical-align: text-bottom;
+    display: inline-block;
+    content: 'X';
+    vertical-align: text-bottom;
+    background: #E25F6A;
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px 2px;
 }
 .jqcart-del-item:hover {
     color: #F00;
@@ -221,11 +252,12 @@
 }
 .jqcart-orderform input[type=text],
 .jqcart-orderform textarea {
-    width: 250px;
+    width: 960px;
     padding: 3px;
-    border: 1px solid #CCC;
-    border-radius: 5px;
+   /* border: 1px solid #CCC;
+    border-radius: 5px;*/
     resize: vertical;
+    margin-top: 25px;
 }
 .jqcart-orderform input[type=submit],
 .jqcart-orderform input[type=reset] {
@@ -288,9 +320,78 @@
     width: 287px;
     height: 287px;
 }
+.jqcart-thead_id, .jqcart-small-td, .jqcart-price {
+    display: none !important;
+}
+.item_name_title {
+    color: #000;
+    font-family: 'Lemonada';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 380;
+    line-height: normal;
+}
+.item_name_weight, .item_name_filling, .item_name_delivery{
+    color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
 
+.jqcart-price {
+    color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.jqcart-amount {
+    color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.jqcart-sum {
+    color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.jqcart-tr {
+    height: 280px;
+}
+.clear_cart {
+    border-radius: 30px;
+    border: 2px solid #E25F6A;
+    background: #E25F6A;
+    color: #FFF;
+    font-family: 'Nunito Sans';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 245px;
+    height: 60px;
+    flex-shrink: 0;
+}
+.order_input {
+    border: none;
+    color: #A4A2A2;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    border-bottom: 1px solid #000 ;
 
-
+}
 @media print {
   * {
     margin: 0;

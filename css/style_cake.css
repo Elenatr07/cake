@@ -30,6 +30,7 @@ font-size: 40px;
 font-style: normal;
 font-weight: 380;
 line-height: normal;
+cursor: pointer;
 }
 .active {
     color: #E25F6A;
