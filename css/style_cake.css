@@ -55,3 +55,49 @@ line-height: normal;
 .cake_block_filter {
     margin-bottom: 120px;
 }
+.filling_modal_title {
+    color: #E25F6A;
+    font-family: 'Lemonada';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 380;
+    line-height: normal;
+    margin-top: 130px;
+}
+#modal3 .filling_modal_title {
+    margin-top: 60px;
+}
+.filling_price {
+    color: #1C0C09;
+    font-family: 'Lemonada';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 380;
+    line-height: normal;
+}
+.filling_type {
+    color: #1C0C09;
+    font-family: 'Lemonada';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+.filling_text {
+    color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    width: 500px;
+    margin-top: 100px;
+}
+.note {
+    color: #000;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}

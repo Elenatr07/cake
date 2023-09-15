@@ -18,17 +18,17 @@
     top: 38px;
     right: -10px;
     width: 26px;
-height: 26px;
-flex-shrink: 0;
-background-image: url(../img/Ellipse.svg);
-background-size: 26px 26px;
-background-repeat: no-repeat;
-color: #FFF;
-font-family: 'Inter';
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    height: 26px;
+    flex-shrink: 0;
+    background-image: url(../img/Ellipse.svg);
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 
@@ -57,6 +57,13 @@ select {
     font-weight: 400;
     line-height: 150%; /* 30px */
     padding-left: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+ 
+    }
+select:focus {
+    outline: none;
 }
 .modal-body {
     padding: 10px 90px 10px 90px;
@@ -114,12 +121,17 @@ select {
 }
 .btn {
     color: #000;
-font-family: Nunito Sans;
-font-size: 27px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-text-align: start;
+    font-family: 'Nunito Sans';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: start;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.btn.focus, .btn:focus {
+    box-shadow: none;
 }
 .btn img {
     margin-bottom: 20px;
