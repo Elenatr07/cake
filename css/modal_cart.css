@@ -40,6 +40,9 @@
     width: 720px;
 
 }
+.for_decoration img {
+    width: 500px;
+}
 .sum {
     display: flex;
     justify-content: center;
