@@ -60,6 +60,9 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    background-image: url(../img/Arrow_down.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
  
     }
 select:focus {
