@@ -11,7 +11,7 @@ void function () {
  smoke.zindex           = 10000         // Z-index of the smoke DOM object. This should be a high number.
  smoke.reverse_buttons  = false         // If false, the "Ok" button appears before (left of) the "Cancel" button. If true, the "Cancel" button appears before the "Ok" button.
  smoke.autofocus        = true          // If true, the input is automatically focused when the smoke DOM object is created.
- smoke.autoexit         = true          // If true, clicking outside the smoke dialog (but inside the dialog_wrapper) closes/detaches the smoke DOM object and runs the callback with a parameter of (false, evt).
+ smoke.autoexit         = false          // If true, clicking outside the smoke dialog (but inside the dialog_wrapper) closes/detaches the smoke DOM object and runs the callback with a parameter of (false, evt).
  smoke.custom_css       = {}            // Custom classes for each object in the structure. E.G.: smoke.custom_css = {"button.ok": "my_ok_button_style"} or smoke.custom_css = {"buttons.ok": ["my_ok_button_style1", "my_ok_button_style2"]}
  smoke.css_prefix       = "smoke"       // The CSS prefix for the classes used in the .build function.
  smoke.value            = undefined     // The initial value to set the prompt input text to.
@@ -222,4 +222,6 @@ void function () {
  } else {
   this.smoke = smoke
  }
+
+
 } ()
