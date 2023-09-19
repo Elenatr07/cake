@@ -28,7 +28,7 @@ input[type="text"] {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .header_block {
     background-image: url(../img/main_img.svg);
@@ -53,6 +53,10 @@ a {
  
    
 }
+.header_logo:hover {
+    text-shadow: 0 0 20px #FFF;
+    color: #E25F6A ;
+}
 .link_phone {
     text-decoration: none;
     pointer-events: none;
@@ -65,6 +69,7 @@ a {
     line-height: normal;
     margin-right: 58px;
 }
+
 .contacts {
     display: flex;
     justify-content: space-between;
@@ -76,6 +81,11 @@ a {
     width: 33px;
     height: 33px;
    
+}
+
+.contacts a img:hover {
+    transform: scale(0.95);
+    box-shadow:0 0 20px rgba(226, 95, 106, 1);
 }
 .main_slogan h1 {
     color: #FFF;
@@ -114,6 +124,12 @@ a {
     margin-top: 95px;
     display: block;
     
+}
+.button_about:hover {
+
+        box-shadow:0 0 20px rgba(226, 95, 106, 1);
+        transform: scale(0.95);
+        border: 1px solid #FFF;
 }
 .info_cake h3 {
     color: #E25F6A;
@@ -188,6 +204,10 @@ a {
     color: #000;
     margin-top: 60px;
 
+}
+.button_view_all:hover {
+    box-shadow:0 0 20px rgba(226, 95, 106, 1);
+    transform: scale(0.95);
 }
 .cake_block h2, .follow_us h2 {
     color: #000;
@@ -334,6 +354,7 @@ a {
 }
 .name {
     position: relative;
+    margin-top: 14px;
 }
  .name .input:focus, .input:not(:placeholder-shown){
     padding-top: 1.625rem;
@@ -371,6 +392,13 @@ a {
 .input-file {
 	position: relative;
 	display: inline-block;
+}
+.input-file-btn:hover {
+   
+    transform: scale(0.95);
+   
+    border: 1px solid #FFF;
+    box-shadow: rgb(226, 95, 106) 0px 0px 20px;
 }
 .input-file-btn, .input-file span {
 	position: relative;
@@ -413,12 +441,8 @@ a {
 
 
 /* Hover/Active */
-.input-file:hover span {
-	background-color: #59be6e;
-}
-.input-file:active span {
-	background-color: #2E703A;
-}
+
+
 
 /* Disabled */
 .input-file input[type=file]:disabled + span {
@@ -438,6 +462,14 @@ a {
 	display: inline-block;
 	margin-left: 10px;
     margin-right: 10px;
+}
+.input-file-list-name {
+    color: black;
+    font-family: 'Nunito Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
 }
 
 .center {

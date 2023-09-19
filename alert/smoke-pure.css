@@ -64,7 +64,9 @@ height: 20%;
     width: 130px;
 }
 .smoke-dialog-buttons-ok:hover, .smoke-dialog-buttons-cancel:hover {
-  background: #222;
+  box-shadow:0 0 20px rgba(226, 95, 106, 1);
+        transform: scale(0.95);
+        border: 1px solid #FFF;
 }
 
 .smoke-prompt {

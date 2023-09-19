@@ -172,7 +172,7 @@
       orderPreview += '<div class="jqcart-subtotal">Total: ' + opts.currency + '<strong>' + subtotal + '</strong> </div>';
       orderPreview += '<button class="clear_cart" id="clear">Clear cart</button> ';
 		//	orderPreview += '<button id="cancel">Закрыть корзину</button>'
-			cartHtml = subtotal ? (orderPreview + orderform) : '<h2 class="jqcart-empty-cart">Корзина пуста</h2>';
+			cartHtml = subtotal ? (orderPreview + orderform) : '<h2 class="jqcart-empty-cart">The basket is empty</h2>';
       $(modal).appendTo('body').find('.jqcart-checkout').html(cartHtml);
     },
     hideCart: function() {
@@ -200,7 +200,7 @@
         
         error: function() {},
         success: function(resp) {
-          $('.jqcart-checkout').html('<p class="status_order">' + '<h3 class="status_oder_title">Thank You for Your Order!</h3' + '\r\n' + '<span>' + resp.message + '</span>' + '</p>');
+          $('.jqcart-checkout').html('<p class="status_order">' + '<h3 class="status_oder_title">Thank You for Your Order!<br><span>We will contact you shortly</span></h3' + '\r\n' + '<span>' + resp.message + '</span>' + '</p>');
 					if(!resp.errors) {
 						setTimeout(methods.clearCart, 32000);
            // location.href = 'path/to/another/page.html';

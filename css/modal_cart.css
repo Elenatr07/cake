@@ -92,6 +92,11 @@ select:focus {
     font-weight: 600;
     line-height: normal;
 }
+.add_item:hover {
+    box-shadow:0 0 20px rgba(226, 95, 106, 1);
+        transform: scale(0.95);
+        border: 1px solid #FFF;
+}
 .modal-dialog-scrollable .modal-body {
      overflow-y:hidden;
 }

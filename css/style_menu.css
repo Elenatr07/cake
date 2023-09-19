@@ -37,10 +37,7 @@
 }
 
 .link:hover {
-      background: linear-gradient(75deg,rgba(247, 62, 148, 1), rgba(34, 220, 217, 1));
-      -webkit-background-clip: text;
-      font-weight: 400;
-      -webkit-text-fill-color: transparent;
+    color: rgba(226, 95, 106, 1);
 }
 
 
