@@ -32,13 +32,18 @@ font-weight: 380;
 line-height: normal;
 cursor: pointer;
 }
+.type:hover{
+    
+    color: #E25F6A;
+    transform: scale(0.95);
+}
 .active {
     color: #E25F6A;
-font-family: "Lemonada";
-font-size: 40px;
-font-style: normal;
-font-weight: 380;
-line-height: normal;
+    font-family: "Lemonada";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 380;
+    line-height: normal;
 }
 .filter_option {
     display: flex;
