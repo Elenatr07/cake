@@ -546,6 +546,33 @@ footer {
     margin-right: 0;
 }
 
-
-
-  
+.contacts_block {
+    display: flex;
+    justify-content: space-around;
+    margin: 120px auto;
+    max-width: 1920px;
+}
+.map iframe {
+    width: 872px;
+    height: 700px;
+}
+.address_txt {
+    color: #000;
+    font-family: 'Lemonada';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 380;
+    line-height: normal;
+}
+.address ul li {
+    display: flex;
+    margin-top: 37px;
+}
+.address ul li img {
+    width: 53px;
+    height: 53px;
+    margin-right: 18px;
+}
+.address {
+    margin: auto 0;
+}
