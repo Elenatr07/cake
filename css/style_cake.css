@@ -111,6 +111,10 @@ line-height: normal;
     line-height: normal;
     margin-left: 15px;
 }
+.filling_item span {
+  color:  rgba(164, 162, 162, 1);
+  margin-left: 50px;
+}
 .for_decor {
     margin-top: 50px;
 }
