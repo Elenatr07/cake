@@ -80,7 +80,7 @@ $send_ok = mail($to, $subject, $body, implode("\r\n", $headers));
 // Ответ на запрос
 $response = [
 	'errors' => !$send_ok,
-	'message' => $send_ok ? 'Заказ принят в обработку!' : 'Хьюстон! У нас проблемы!'
+	'message' => $send_ok ? 'We will contact you shortly' : 'Еhere is a problem with sending your order, please contact us by phone or e-mail'
 ];
 // ! Для версий PHP < 5.4 использовать традиционный синтаксис инициализации массивов:
 /*

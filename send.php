@@ -2,7 +2,7 @@
 if (isset ($_POST['contactFF'])) {
   $to = "energotr07@yandex.ru"; // поменять на свой электронный адрес
   $from = $_POST['contactFF'];
-  $subject = "Заполнена контактная форма с ".$_SERVER['HTTP_REFERER'];
+  $subject = "Ordering an individual cake from the website ".$_SERVER['HTTP_REFERER'];
   $message = "Имя: ".$_POST['nameFF']."\nPhone: ".$from."\nIP: ".$_SERVER['REMOTE_ADDR']."\nСообщение: ".$_POST['textFF'];
   $boundary = md5(date('r', time()));
   $filesize = '';

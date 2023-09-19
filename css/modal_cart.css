@@ -97,6 +97,9 @@ select:focus {
         transform: scale(0.95);
         border: 1px solid #FFF;
 }
+.add_item:focus{
+    outline: none;
+}
 .modal-dialog-scrollable .modal-body {
      overflow-y:hidden;
 }

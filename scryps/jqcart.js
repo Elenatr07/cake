@@ -200,9 +200,9 @@
         
         error: function() {},
         success: function(resp) {
-          $('.jqcart-checkout').html('<p class="status_order">' + '<h3 class="status_oder_title">Thank You for Your Order!<br><span>We will contact you shortly</span></h3' + '\r\n' + '<span>' + resp.message + '</span>' + '</p>');
+          $('.jqcart-checkout').html('<p class="status_order">' + '<h3 class="status_order_title">Thank You for Your Order!</h3>' + '\r\n' + '<span class="order_status_txt">' + resp.message + '</span>' + '</p>');
 					if(!resp.errors) {
-						setTimeout(methods.clearCart, 32000);
+						setTimeout(methods.clearCart, 2000);
            // location.href = 'path/to/another/page.html';
 					}
         }

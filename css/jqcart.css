@@ -403,6 +403,9 @@
         transform: scale(0.95);
         border: 1px solid #FFF;
 }
+.clear_cart:focus {
+    outline: none;
+}
 .order_input {
     border: none;
     color: black;
@@ -414,6 +417,9 @@
     border-bottom: 1px solid #000 ;
     background: #E1DDDA;
 
+}
+.order_input:active {
+    background: #E1DDDA;
 }
 .select_delivery_time {
     color: #1C0C09;
@@ -461,7 +467,7 @@
     font-weight: 380;
     line-height: normal;
 }
-.status_order_title span {
+.order_status_txt {
     color: #000;
     font-family: 'Nunito Sans';
     font-size: 30px;
