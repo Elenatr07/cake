@@ -74,12 +74,12 @@ a {
     display: flex;
     justify-content: space-between;
     margin-top: 48px;
-    width: 374px;
-    
+     
 }
 .contacts a img {
     width: 33px;
     height: 33px;
+    margin-right: 33px;
    
 }
 
@@ -152,7 +152,7 @@ a {
 .info_cake {
     background: #1C0C09;
     width: 684px;
-    height: 763px;
+  
     padding: 58px 50px 50px 50px;
     }
 .cake_block {
@@ -165,13 +165,14 @@ a {
 .cake_block_wrapper{
     display: flex;
     justify-content: space-around;
-    margin: 0 184px 0px 184px;
+    margin: 0 auto 0px auto;
+    max-width: calc(98% - 23%);
 }
 .img_cake {
     display: flex;
     flex-wrap: wrap;
     width: 694px;
-    height: 768px;
+   
     justify-content: space-between;
 }
 .img_cake img:first-child {
@@ -199,7 +200,7 @@ a {
     border: 2px solid #E25F6A;
     margin: 0 auto;
     text-align: center;
-    padding: 23px 39px;
+    padding: 18px 16px;
     display: block;
     color: #000;
     margin-top: 60px;
@@ -241,13 +242,14 @@ a {
 }
 .choose_us {
     display: flex;
-    max-width: 1736px;
-    margin: 75px auto 0 auto;
+    max-width: 1920px;
+    margin: 75px 92px 0 92px;
 }
 .choose_us img {
     margin-right: 27px;
     margin-left: 27px;
-    top: -109px;
+    width: 74px;
+    height: 74px;
     position: relative;
 }
 .choose_us div {
@@ -304,7 +306,7 @@ a {
 }
 .form {
     width: 761px;
-    margin: 0 90px;
+    margin: 0 auto;
 }
 .form_text {
     color: #000;
@@ -313,6 +315,7 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 30px */
+    margin-top: 19px;
 }
 .input {
     border: none;
@@ -533,10 +536,15 @@ footer {
     background: #1C0C09;
     max-width: 1920px;
     margin: 0 auto;
-    display: flex;
-  justify-content: center;
+
     padding-top: 40px;
     padding-bottom: 89px;
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 70px;
 }
 .img1 {
     width: 755px;
@@ -574,9 +582,7 @@ footer {
 .menu_footer {
     max-width: 754px;
 }
-.contacts_footer a img {
-    margin-right: 0;
-}
+
 
 .contacts_block {
     display: flex;
@@ -607,4 +613,323 @@ footer {
 }
 .address {
     margin: auto 0;
+}
+@media(min-width:1750px) and (max-width:1900px) {
+     .img_cake img:first-child {
+        width: 632px;
+        height: 450px;
+     
+    }
+    .img_cake img:nth-child(2) {
+        width: 292px;
+        height: 211px;
+    }
+    .img_cake img:nth-child(3) {
+        width: 301px;
+        height: 211px;
+    }
+    .img_cake {
+        width: 633px;
+    }
+    .info_cake {
+        width: 623px;
+    }
+    .info_cake h3, .main_slogan p, 
+    .info_cake p, 
+    .choose_us p, 
+    .form_text,
+    .input-file-btn, 
+    .input-file span,
+    .follow_us p,
+    .main_slogan p {
+        font-size: 25px;
+    }
+   
+    .button_view_all {
+        font-size: 25px;
+        width: 294px;
+    }
+    .button_about {
+        font-size: 25px;
+        width: 294px;
+    }
+
+    .main_slogan h1 {
+        font-size: 72px;
+    }
+  
+    .cake_block h2, 
+    .follow_us h2, 
+    .form_title{
+        font-size: 55px;
+    }
+    .contacts_block_img img {
+        width: 838px;
+        height: 951px;
+    }
+    .form {
+        width: 694px;
+    }
+    .input {
+        width: 692px;
+        font-size: 27px;
+    }
+    .input-file-btn, 
+    .input-file span {
+        width: 294px;
+    }
+    .img1 {
+        width: 688px;
+        height: 688px;
+    }
+    .img2 {
+        width: 688px;
+        height: 467px;
+    }
+    .img3 {
+        width: 797px;
+        height: 530px;
+    }
+    .img4 {
+        width: 797px;
+        height: 622px;
+    }
+    .cake_block_wrapper {
+        justify-content: space-around;
+    }
+
+ 
+ 
+}
+@media(min-width:1600px) and (max-width:1749px) {
+    .input {
+        width: 633px;
+        font-size: 25px;
+    }
+    .input-file-btn, 
+    .input-file span {
+        width: 269px;
+    }
+    .img1 {
+        width: 629px;
+        height: 629px;
+    }
+    .img2 {
+        width: 629px;
+        height: 427px;
+    }
+    .img3 {
+        width: 729px;
+        height: 485px;
+    }
+    .img4 {
+        width: 729px;
+        height: 569px;
+    }
+    .main_slogan {
+        width: 676px;
+      }
+      .img_cake img:first-child {
+        width: 579px;
+        height: 412px;
+     
+    }
+    .img_cake img:nth-child(2) {
+        width: 267px;
+        height: 193px;
+    }
+    .img_cake img:nth-child(3) {
+        width: 275px;
+        height: 193px;
+    }
+    .img_cake {
+        width: 578px;
+    }
+    .info_cake {
+        width: 570px;
+    }
+    .info_cake h3, 
+    .main_slogan p, 
+    .info_cake p, 
+    .choose_us p,
+    .form_text,
+    .input-file-btn, 
+    .input-file span,
+    .follow_us p,
+    .main_slogan p {
+     font-size: 23px;
+     }
+    
+    .button_about {
+     font-size: 23px;
+     width: 269px;
+     }
+     .button_view_all {
+         font-size: 23px;
+         width: 269px;
+     }
+ 
+     .main_slogan h1 {
+         font-size: 66px;
+     }
+    
+     .cake_block h2, 
+     .follow_us h2, 
+     .form_title {
+         font-size: 50px;
+     }
+     .contacts_block_img img {
+         width: 766px;
+         height: 869px;
+     }
+     .form {
+         width: 634px;
+     }
+     .contacts_footer {
+        margin-top: 43px;
+     }
+ 
+}
+@media(min-width:1440px) and (max-width:1599px) {
+    .img_cake img:first-child {
+        width: 521px;
+        height: 370px;
+    }
+    .img_cake img:nth-child(2) {
+        width: 241px;
+        height: 174px;
+    }
+    .img_cake img:nth-child(3) {
+        width: 248px;
+        height: 174px;
+    }
+    .info_cake {
+        width: 513px;
+    }
+    .img_cake {
+        width: 520px;
+    }
+    .info_cake h3,
+    .info_cake p,
+    .button_view_all,
+    .choose_us h3,
+    .choose_us p  {
+        font-size: 20px;
+    }
+    .button_view_all {
+        width: 242px;
+    }
+    .cake_block h2, 
+    .follow_us h2,
+    .form_title {
+        font-size: 45px;
+    }
+    .choose_us {
+        margin: 75px 88px 0 88px;
+    }
+    .contacts_block_img img {
+        width: 689px;
+        height: 782px;
+    }
+    .form {
+        width: 571px;
+    }
+    .main_slogan h1 {
+        font-size: 59px;
+      }
+      .main_slogan {
+        width: 560px;
+      }
+      .main_slogan p,
+      .button_about,
+      .input,
+      .input-file-btn, 
+      .input-file span,
+      .form_text,
+      .follow_us p  {
+        font-size: 20px;
+      }
+      .button_about {
+        width: 242px;
+      }
+      .input {
+        width: 569px;
+      }
+      .input-file-btn, 
+      .input-file span {
+        width: 242px;
+      }
+      .input-file-btn {
+        margin-top: 60px;
+    }
+    .follow_us p {
+        width: 719px;
+    }
+    .img1 {
+        width: 566px;
+        height: 566px;
+      
+    }
+    .img3 {
+        width: 656px;
+        height: 436px;
+     
+    }
+    .img2 {
+        width: 568px;
+        height: 379px;
+   
+    }
+    .img4 {
+        width: 656px;
+        height: 512px;
+     
+    }
+    .contacts_footer {
+        margin-top: 45px;
+    }
+    .for_footer {
+        margin-top: 43px;
+    }
+}
+@media(min-width:1439px) and (max-width:1441px) {
+    .cake_block_wrapper {
+        justify-content: space-between;
+    }
+}
+
+
+@media(min-width:1500px) and (max-width:1800px) {
+    .link_phone {
+        font-size: 21px;
+    }
+    .header_logo {
+        font-size: 21px;
+        min-width: 180px;
+    }
+    .contacts a img {
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+  }
+  .for_footer {
+     margin-top: 43px;
+}
+}
+@media(min-width:1440px) and (max-width:1500px) {
+    .header_logo, .link_phone {
+        font-size: 17px;
+    }
+    .contacts a img {
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+  }
+  .header_logo {
+    min-width: 150px;
+  }
+  .contacts {
+    margin-top: 43px;
+  }
+
 }
