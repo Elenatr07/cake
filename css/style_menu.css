@@ -529,8 +529,8 @@ ul {
       flex-direction: row;
       width: 100%;
       margin-top: 48px;
-      max-width: 764px ;
-      margin: 48px 142px 0 142px;
+      max-width: 517px ;
+      margin: 48px auto 0 auto;
 
    }
 
@@ -544,7 +544,7 @@ ul {
 
    .link {
       margin-top: 5px;
-      font-size: 21px;
+      font-size: 15px;
    }
 
    .link_contact {
