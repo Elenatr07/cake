@@ -31,6 +31,8 @@
    font-style: normal;
    font-weight: 400;
    line-height: normal;
+   height: 50px;
+   display: block;
 
 }
 
@@ -71,6 +73,8 @@
    flex-direction: column;
    margin-top: 140px;
    padding: 0;
+   text-align: center;
+   width: 100%;
 
 }
 
@@ -100,7 +104,7 @@ ul {
    height: 5px;
    position: relative;
    width: 35px;
-   background: green;
+   background: #E25F6A;
    transform: matrix(1, 0, 0, -1, 0, 0);
    border-radius: 10px;
 }
@@ -116,7 +120,7 @@ ul {
    position: absolute;
    transition: all .2s ease-out;
    width: 100%;
-   background: green;
+   background: #E25F6A;
    transform: matrix(1, 0, 0, -1, 0, 0);
    border-radius: 10px;
 }
@@ -529,8 +533,8 @@ ul {
       flex-direction: row;
       width: 100%;
       margin-top: 48px;
-      max-width: 517px ;
-      margin: 48px auto 0 auto;
+      max-width: 490px ;
+      margin: 49px auto 0 auto;
 
    }
 
@@ -574,7 +578,7 @@ ul {
 
   
 }
-@media (max-width:1800px) {
+@media (min-width:1440px) and (max-width:1800px) {
    .menu {
      margin: 43px auto 0 auto;
 
