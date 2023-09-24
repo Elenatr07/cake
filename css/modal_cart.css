@@ -145,6 +145,10 @@ select:focus {
     border: none;
     -webkit-tap-highlight-color: transparent;
 }
+.btn:hover {
+    transform: scale(0.95);
+    transition: all 0.2s linear;
+}
 .btn.focus, .btn:focus {
     box-shadow: none;
 }
