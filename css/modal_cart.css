@@ -38,7 +38,8 @@
 }
 .modal_img img {
     width: 680px;
-
+    max-height: 757px
+ 
 }
 .for_decoration img {
     width: 500px;
