@@ -2013,6 +2013,10 @@ footer {
     .input {
         width: 333px;
     }
+    .header_block {
+        background-image: url(../img/main_390.png);
+        height: 856px;
+    }
 }
 @media(max-width:374px) {
     .header_block {
