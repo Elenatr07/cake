@@ -1874,7 +1874,7 @@ footer {
     }
     .main_slogan {
         margin: 15px 0 0 24px;
-         max-width: 276px;
+         max-width: 259px;
     }
     .main_slogan p,
     .button_about {
@@ -1917,12 +1917,15 @@ footer {
     .button_view_all, 
     .choose_us h3, 
     .choose_us p, 
-    .form_text, .input, 
+    .form_text, 
     .text-field__label, 
     .input-file-btn, 
     .input-file span, 
     .follow_us p {
         font-size: 14px;
+    }
+    .input {
+        font-size: 16px;
     }
     .choose_us img {
         margin-right: 17px;
@@ -2015,12 +2018,12 @@ footer {
     }
     .header_block {
         background-image: url(../img/main_390.png);
-        height: 856px;
+        height: 720px;
     }
 }
 @media(max-width:374px) {
     .header_block {
-        height: 570px;
+        height: 650px;
     }
     .main_slogan h1 {
         font-size: 30px; 
@@ -2035,19 +2038,23 @@ footer {
     .button_view_all, 
     .choose_us h3, 
     .choose_us p, 
-    .form_text, .input, 
+    .form_text,  
     .text-field__label, 
     .input-file-btn, 
     .input-file span, 
     .follow_us p {
         font-size: 12px;
     }
+
+    .input {
+        font-size: 16px;
+    }
     .main_slogan {
       max-width: 200px;
       margin: 0px 0 0 24px;
     }
     .main_slogan p, .button_about {
-        margin-top: 45px;
+        margin-top: 60px;
     }
     .button_about, .button_view_all {
         width: 147px;
