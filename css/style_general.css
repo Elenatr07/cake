@@ -632,7 +632,7 @@ footer {
     display: flex;
 
     padding-top: 40px;
-    padding-bottom: 89px;
+    padding-bottom: 68px;
 }
 
 .footer_wrapper {
@@ -1133,6 +1133,9 @@ footer {
         margin: 40px 0 0 84px;
       
     }
+    footer {
+        padding-bottom: 59px;
+    }
 
 }
 
@@ -1297,6 +1300,18 @@ footer {
     .contacts_footer {
         max-width: 270px;
     }
+    footer {
+        padding-bottom: 50px;
+    }
+    .for_footer {
+        margin-top: 45px;
+    }
+    .menu_footer {
+        margin: 40px auto 0 auto;
+    }
+    .contacts {
+        margin-top: 45px;
+    }
   
 }
 
@@ -1406,6 +1421,7 @@ footer {
     .header_block {
         background-attachment: local;
     }
+
 }
 
 @media(max-width:1100px) {
@@ -1463,7 +1479,7 @@ footer {
         order: 2;
         margin: 0 auto;
         max-width: 240px;
-        font-size: 19px;
+        font-size: 17px;
         text-align: center;
 
 
@@ -1473,14 +1489,14 @@ footer {
         margin: 0 auto;
     }
     .menu_footer {
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: row;
         order: 1;
-        max-width: 100%;
+        max-width: 75%;
         margin-top: 0;
     }
     .footer {
-        margin-right: 45px;
+       
         font-size: 17px;
     }
     .phone_footer {
@@ -1597,6 +1613,9 @@ footer {
     .img_cake {
         width: 361px;
         
+    }
+    footer {
+        padding-bottom: 35px;
     }
     
 
@@ -1733,11 +1752,373 @@ footer {
         width: 511px;
         height: 399px;
     }
+    #file_list {
+        margin-left: 15px;
+        margin-top: -36px;
+    }
+    .input-file-list-name {
+        font-size: 12px;
+        font-weight: 300;
+    }
    
 }
 @media(max-width:767px) {
  .header_block {
         background-image: url(../img/main_768.png);
-        height: 1097px;
+        height: 880px;
+    }
+    .main_slogan {
+        margin: 69px 0 0 84px;
+    }
+    .main_slogan {
+        margin: 69px 0 0 50px;
+    }
+    .contacts_block_img img {
+        width: 526px;
+        height: 597px;
+    }
+    .follow_us p {
+        width: 475px;
+    }
+    
+    
+   
+}
+@media(max-width:650px) {
+    .header_block {
+        background-image: url(../img/main_560.png);
+        height: 856px;
+    }
+    .choose_us {
+        width: 460px;
+    }
+    .choose_us div {
+        width: 320px;
+    }
+    .choose_us img {
+        margin-left: 0;
+    }
+    .form {
+      width: 415px;
+    }
+    .input{
+        width: 413px;
+    }
+    .contacts_block_img img {
+        width: 430px;
+        height: 488px;
+    }
+    .cake_block h2, 
+    .follow_us h2, 
+    .form_title {
+        font-size: 32px;
+    }
+    .main_slogan p, 
+    .button_about, 
+    .info_cake h3, 
+    .info_cake p, 
+    .button_view_all,
+    .choose_us h3, 
+    .choose_us p, 
+    .form_text, .input, 
+    .text-field__label, 
+    .input-file-btn, 
+    .input-file span, 
+    .follow_us p {
+        font-size: 15px;
+    }
+    .follow_us p {
+        width: 448px;
+    }
+    .form_title {
+        text-align: center;
+    }
+    .img1 {
+        width: 432px;
+        height: 432px;
+       
+    }
+    .img2 {
+        width: 432px;
+        height: 294px;
+        margin-right: 0;
+    }
+    .img3 {
+        width: 432px;
+        height: 292px;
+    }
+    .img4 {
+        width: 432px;
+        height: 337px;
+    }
+    .footer {
+       font-size: 15px;
+    }
+    .for_footer,
+    .phone_footer {
+        font-size: 15px;
+    }
+  
+   
+    
+}
+
+
+@media(max-width:539px) {
+    .header_block {
+        height: 750px;
+    }
+    .main_slogan h1 {
+        max-width: 358px;
+        line-height: 135%;
+    }
+    .main_slogan {
+        margin: 15px 0 0 24px;
+         max-width: 276px;
+    }
+    .main_slogan p,
+    .button_about {
+        margin-top: 60px;
+    }
+    .button_about, .button_view_all {
+        width: 185px;
+    }
+    .header_page {
+        margin: 0 25px;
+    }
+    .info_cake {
+        width: 361px;
+        padding: 31px 31px 31px 31px
+    }
+    .img_cake img:first-child {
+        width: 361px;
+        height: 257px;
+    }
+    .img_cake {
+        width: 361px;
+    }
+    .img_cake img:nth-child(2) {
+        width: 167px;
+        height: 120px;
+    }
+    .img_cake img:nth-child(3) {
+        width: 171px;
+        height: 121px;
+    }
+    .cake_block h2, 
+    .follow_us h2, 
+    .form_title {
+        font-size: 20px;
+    }
+    .main_slogan p, 
+    .button_about, 
+    .info_cake h3, 
+    .info_cake p, 
+    .button_view_all, 
+    .choose_us h3, 
+    .choose_us p, 
+    .form_text, .input, 
+    .text-field__label, 
+    .input-file-btn, 
+    .input-file span, 
+    .follow_us p {
+        font-size: 14px;
+    }
+    .choose_us img {
+        margin-right: 17px;
+    }
+    .choose_us {
+        width: 383px;
+    }
+    .choose_us div {
+        width: 266px;
+    }
+    .form {
+        width: 340px;
+    }
+    .input {
+        width: 338px;
+    }
+    .button_about, .button_view_all {
+       padding: 10px 10px;
+       
+    }
+    .input-file-list-name {
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .input-file-btn, .input-file span {
+        width: 140px;
+    }
+    .contacts_block_img img {
+        width: 340px;
+        height: 386px;
+    }
+    .follow_us p {
+        width: 350px;
+    }
+    .img1 {
+        width: 340px;
+        height: 340px;
+    }
+    .img2 {
+        width: 340px;
+        height: 227px;
+       
+    }
+    .img3 {
+        width: 340px;
+        height: 226px;
+    }
+    .img4 {
+        width: 340px;
+        height: 265px;
+    }
+    .footer,
+    .for_footer, 
+    .phone_footer {
+       font-size: 12px;
+    }
+    
+   
+}
+@media(max-width:400px) {
+    .info_cake {
+        width: 340px;
+    }
+    .img_cake img:first-child {
+        width: 340px;
+        height: 241px;
+    }
+    .img_cake img:nth-child(2) {
+        width: 155px;
+        height: 112px;
+    }
+    .img_cake img:nth-child(3) {
+        width: 160px;
+        height: 113px;
+    }
+    .img_cake {
+        width: 340px;
+    }
+    .choose_us {
+        width: 350px;
+    }
+    .choose_us div {
+        width: 250px;
+    }
+    .form {
+        width: 335px;
+    }
+    .input {
+        width: 333px;
+    }
+}
+@media(max-width:374px) {
+    .header_block {
+        height: 570px;
+    }
+    .main_slogan h1 {
+        font-size: 30px; 
+        max-width: 254px;
+        line-height: 130%;
+    }
+    
+    .main_slogan p, 
+    .button_about, 
+    .info_cake h3, 
+    .info_cake p, 
+    .button_view_all, 
+    .choose_us h3, 
+    .choose_us p, 
+    .form_text, .input, 
+    .text-field__label, 
+    .input-file-btn, 
+    .input-file span, 
+    .follow_us p {
+        font-size: 12px;
+    }
+    .main_slogan {
+      max-width: 200px;
+      margin: 0px 0 0 24px;
+    }
+    .main_slogan p, .button_about {
+        margin-top: 45px;
+    }
+    .button_about, .button_view_all {
+        width: 147px;
+    }
+    .info_cake {
+        width: 280px;
+    }
+    .img_cake img:first-child {
+        width: 280px;
+        height: 199px;
+    }
+    .img_cake {
+        width: 280px;
+    }
+    .img_cake img:nth-child(2) {
+        width: 127px;
+        height: 92px;
+    }
+    .img_cake img:nth-child(3) {
+        width: 132px;
+        height: 93px;
+    }
+    .cake_block h2, 
+    .follow_us h2, 
+    .form_title {
+        font-size: 17px;
+    }
+    .choose_us img {
+        width: 35px;
+        height: 35px;
+    }
+    .choose_us {
+        width: 280px;
+    }
+    .choose_us div {
+        width: 220px;
+    }
+    .form {
+        width: 284px;
+    }
+    .input {
+        width: 282px;
+    }
+    .input-file-btn, 
+    .input-file span {
+        width: 120px;
+    }
+    .contacts_block_img img {
+        width: 280px;
+        height: 318px;
+    }
+    .follow_us p {
+        width: 280px;
+    }
+    .img1 {
+        width: 280px;
+        height: 280px;
+    }
+    .img2 {
+        width: 280px;
+        height: 187px;
+    }
+    .img3 {
+        width: 280px;
+        height: 188px;
+    }
+    .img4 {
+        width: 280px;
+        height: 218px;
+    }
+    
+    .menu_footer {
+        max-width: 90%;
+    }
+    .footer, .for_footer {
+        height: 40px;
     }
 }

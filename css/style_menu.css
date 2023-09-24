@@ -584,6 +584,11 @@ ul {
 
    }
 }
+@media(max-width:767px) {
+   .header_page {
+      margin: 0 50px;
+   }
+}
 
 @media (max-width:425px) {
    .header_logo {
