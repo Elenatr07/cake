@@ -516,3 +516,8 @@
       height: 32px;
     }
 }
+@media(max-width:1100px) {
+    .jqcart-cart-label {
+        margin-top: 10px;
+    }
+}
