@@ -162,7 +162,7 @@
 					orderPreview += '<div class="jqcart-item-img"><img src="' + cartData[key].img + '" alt=""></div>';
           orderPreview += '<div class="jqcart-item-name">' + '<p class="item_name_title">' + cartData[key].title + '</p>' + '\r\n' + '<p class="item_name_weight">' + cartData[key].weight +'</p>' + '<p class="item_name_filling">' + cartData[key].filling + '</p>' + '<p class="item_name_delivery">' + cartData[key].delivery + '</p>' + '</div>';
           orderPreview += '<div class="jqcart-price">' + cartData[key].price + '</div>';
-          orderPreview += '<div><span class="jqcart-incr" data-incr="-1">&#8211;</span><input type="text" class="jqcart-amount" value="' + cartData[key].count + '"><span class="jqcart-incr" data-incr="1">+</span></div>';
+          orderPreview += '<div class="jqcart-incr-sum"><div class="div_table"><span class="jqcart-incr" data-incr="-1">&#8211;</span><input type="text" class="jqcart-amount" value="' + cartData[key].count + '"><span class="jqcart-incr" data-incr="1">+</span></div></div>';
           orderPreview += '<div class="jqcart-sum">' + opts.currency + '' + sum + ' </div>';
 					orderPreview += '<div class="jqcart-del-item" id="del"></div>';
           orderPreview += '</div>';
