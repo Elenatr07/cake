@@ -142,12 +142,31 @@ cursor: pointer;
         font-size: 25px;
     }
 }
+@media(max-width:1300px) {
+    .filling_modal {
+        margin-left: 20px;
+    }
+}
+@media(max-width:1200px) {
+    .filling_modal_title {
+        margin-top: 99px;
+    }
+}
 @media(max-width:1000px) {
     .filter_cake {
         margin-top: 30px;
     }
     .filter_option {
         margin-bottom: 132px;
+    }
+    .filling_text {
+        margin-top: 44px;
+    }
+    .filling_modal_title {
+        margin-top: 65px;
+    }
+    .filling_modal {
+        margin-bottom: 40px;
     }
 }
 @media (max-width:950px) {
@@ -174,6 +193,21 @@ cursor: pointer;
     .for_filter {
         margin: 0 40px 0px 40px;
     }
+    .for_decor {
+        font-size: 16px;
+    }
+    .filling_text {
+        width: 400px;
+    }
+    .note {
+        width:400px;
+    }
+}
+@media(max-width:550px) {
+    .filling_modal {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 @media(max-width:500px) {
     .type {
@@ -188,6 +222,16 @@ cursor: pointer;
     .btn img {
        width: 300px;
         height: 300px;
+    }
+    .filling_text, .note {
+        width: 350px;
+    }
+
+    
+}
+@media(max-width:400px) {
+    .filling_text, .note {
+        width: 300px;
     }
 }
 @media(max-width:378px) {

@@ -183,6 +183,48 @@ line-height: normal;
         width: 60px;
         height: 60px;
     }
+    .modal_img img {
+        width: 550px;
+        max-height: 612px;
+        margin-top: 40px;
+    }
+    .form_cake h4 {
+        font-size: 36px;
+    }
+    
+    .form_cake p, select, .add_item  {
+        font-size: 25px;
+    }
+    select {
+        width: 400px;
+    }
+ }
+ @media(max-width:1200px) {
+    .modal_img img {
+        width: 500px;
+        max-height: 557px;
+        margin-top: 66px;
+    }
+    .modal-header .close {
+      margin: -2rem -2rem -2rem auto;
+    }
+    .form_cake h4 {
+        font-size: 34px;
+    }
+    .form_cake p, select, .add_item {
+        font-size: 24px;
+    }
+    .add_item {
+        margin-top: 46px;
+    }
+    .modal_img img {
+        width: 450px;
+        max-height: 501px;
+    }
+    .modal_img {
+        width: 450px;
+        margin: 0 auto;
+    }
  }
 @media (max-width:1000px) {
     .modal-dialog-scrollable .modal-body {
@@ -190,7 +232,25 @@ line-height: normal;
    }
    .sum {
     flex-direction: column;
+    }
+    
+    .form_cake {
+       margin: 40px auto;
+    }
+    select {
+        width: 600px;
+    }
+    
+    
 }
+@media(max-width:850px){
+    .modal_img img {
+        width: 400px;
+        max-height: 445px;
+    }
+    select {
+        width: 550px;
+    }
 }
 @media(max-width: 767px) {
     .jqcart-title {
@@ -203,14 +263,79 @@ line-height: normal;
         right: -17px;
     }
 }
+@media(max-width:700px) {
+    .close svg {
+        width: 90%;
+    }
+    .modal_img {
+        width: 400px;
+    }
+    .form_cake h4 {
+        font-size: 32px;
+    }
+    .form_cake p, select, .add_item {
+        font-size: 22px;
+    }
+    select {
+        width: 500px;
+    }
+    .add_item  {
+        width: 219px;
+    }
+}
+@media (max-width:650px) {
+    .modal_img img {
+        width: 350px;
+        max-height: 390px;
+    }
+    .modal_img {
+        width: 350px;
+    }
+    select {
+        width: 400px;
+    }
+}
 @media (min-width: 576px) {
    .modal-dialog {
     max-width: 100vw;
     
-} 
-
-
-}
+    } 
+ }
+ @media(max-width:550px) {
+    .close svg {
+        width: 80%;
+    }
+    .modal_img img {
+       margin-top: 50px;
+       width: 300px;
+       max-height: 334px;
+    }
+    .modal_img {
+        width: 300px;
+    }
+    .form_cake h4 {
+        font-size: 30px;
+    }
+    .form_cake p, select, .add_item {
+        font-size: 20px;
+    }
+    select {
+        width: 320px;
+    }
+    .add_item {
+        width: 185px;
+    }
+    .modal-body {
+        padding: 10px 10px 10px 10px;
+    }
+    #itog {
+        text-align: center;
+    }
+    .form_cake {
+        text-align: center;
+    }
+    
+ }
 @media(max-width:539px) {
     .jqcart-title {
         background-size: 40px 40px;
@@ -232,10 +357,93 @@ line-height: normal;
     margin-top: 35px;
     }
 }
+@media(max-width:484px) {
+    
+    .modal_img img {
+       width: 250px;
+        max-height: 282px;
+    }
+    .modal_img {
+        width: 250px;
+    }
+  
+    select {
+        width: 280px;
+    }
+}
+@media(max-width:424px) {
+    .close svg {
+        width: 70%;
+    }
+    .modal_img img {
+        margin-top: 30px;
+        width: 200px;
+        max-height: 226px;
+    }
+    .modal_img {
+        width: 200px;
+    }
+    .form_cake h4 {
+        font-size: 28px;
+    }
+    .form_cake p, select, .add_item {
+        font-size: 18px;
+    }
+    
+}
+@media(max-width:390px) {
+    .modal_img img {
+        margin-top: 20px;
+        width: 150px;
+        max-height: 169px;
+    }
+    .modal_img {
+        width: 150px;
+    }
+    .form_cake {
+        margin: 20px auto;
+        width: 350px;
+    }
+    select {
+        width: 250px;
+    }
+    #itog{
+        width: 350px;
+    }
+    .add_item {
+        height: 50px;
+    }
+}
 @media(max-width:374px) {
     .jqcart-title {
         background-size: 35px 35px;
         width: 35px;
         height: 35px;
+    }
+}
+@media(max-width:355px) {
+    .modal_img img {
+        width: 140px;
+        max-height: 158px;
+    }
+    .modal_img {
+        width: 140px;
+    }
+    .form_cake{
+        width:290px;
+    }
+    .form_cake h4 {
+        font-size: 26px;
+    }
+    .form_cake p, select, .add_item {
+        font-size: 16px;
+    }
+    #itog {
+        width: 290px;
+    }
+    .add_item {
+        width: 151px;
+        height: 45px;
+        margin-top: 30px;
     }
 }
