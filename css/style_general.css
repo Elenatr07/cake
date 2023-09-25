@@ -1833,12 +1833,14 @@ footer {
     }  
     .address {
         text-align: center;
+        margin-top: 10px;
     }
     .address ul li {
        justify-content: center;
     }
     .contacts_block {
        margin: 60px auto;
+    }
    
 }
 @media(max-width:650px) {
@@ -2039,6 +2041,20 @@ footer {
     .phone_footer {
        font-size: 12px;
     }
+    .map iframe {
+        width: 300px;
+        height: 300px;
+    }
+    .address_txt {
+        font-size: 14px;
+    }
+    .address ul li {
+        margin-top: 16px;
+    }
+    .address ul li img {
+        width: 30px;
+        height: 30px;
+    }
     
    
 }
@@ -2188,5 +2204,15 @@ footer {
     }
     .footer, .for_footer {
         height: 40px;
+    }
+    .map iframe {
+        width: 280px;
+    }
+    .address_txt {
+        font-size: 13px;
+    }
+    .address ul li img {
+        width: 28px;
+        height: 28px;
     }
 }
