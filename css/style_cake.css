@@ -233,6 +233,15 @@ cursor: pointer;
     .filling_text, .note {
         width: 300px;
     }
+    .filling_modal_title {
+        margin-top: 40px;
+    }
+    .filling_text {
+        margin-top: 24px;
+    }
+    .modal-header .close {
+        margin: -3rem -3rem -3rem auto;
+    }
 }
 @media(max-width:378px) {
     .filling_item {
