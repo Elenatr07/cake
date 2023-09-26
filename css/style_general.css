@@ -1468,7 +1468,14 @@ footer {
     .link_phone {
        cursor: pointer;
        width: 165px;
-       margin-right: 0;
+       margin-right: 0;  
+       font-size: 20px;
+        margin-top: 70px;
+        pointer-events: auto;
+        
+    }
+    .link_phone:hover {
+        color: #E25F6A;
     }
     .contacts a img {
         margin-left:  12px;
@@ -1476,10 +1483,7 @@ footer {
         margin-top: 25px;
         
     }
-    .link_phone {
-        font-size: 20px;
-        margin-top: 70px;
-    }
+   
     .in_menu {
         display: block;
         margin-bottom: 30px;
