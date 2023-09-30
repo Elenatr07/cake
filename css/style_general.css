@@ -710,6 +710,9 @@ footer {
     font-style: normal;
     font-weight: 380;
     line-height: normal;
+    pointer-events: none;
+    cursor: default;
+
 }
 
 .address ul li {
@@ -1645,6 +1648,12 @@ footer {
     }
     .address_txt {
         font-size: 18px;
+        pointer-events: auto;
+        cursor: pointer;
+       
+    }
+    .address_txt:hover {
+        color: #E25F6A;
     }
     .address ul li img {
         width: 45px;
