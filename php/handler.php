@@ -24,9 +24,9 @@ $tbl = '<table style="width: 100%; border-collapse: collapse;">
 	<tr>
 		<th style="width: 1%; border: 1px solid #333333; padding: 5px;">ID</th>
 		<th style="width: 1%; border: 1px solid #333333; padding: 5px;"></th>
-		<th style="border: 1px solid #333333; padding: 5px;">Наименование</th>
-		<th style="border: 1px solid #333333; padding: 5px;">Цена</th>
-		<th style="border: 1px solid #333333; padding: 5px;">Кол-во</th>
+		<th style="border: 1px solid #333333; padding: 5px;">Name</th>
+		<th style="border: 1px solid #333333; padding: 5px;">Price</th>
+		<th style="border: 1px solid #333333; padding: 5px;">Quantity</th>
 	</tr>';
 $total_sum = 0;
 foreach($orderlist as $id => $item_data) {
@@ -41,7 +41,7 @@ foreach($orderlist as $id => $item_data) {
 	</tr>';
 }
 $tbl .= '<tr>
-		<td  style="border: 1px solid #333333; padding: 5px;" colspan="3">Итого:</td>
+		<td  style="border: 1px solid #333333; padding: 5px;" colspan="3">Total:</td>
 		<td style="border: 1px solid #333333; padding: 5px;"><b>'.$total_sum.'</b></td>
 		<td style="border: 1px solid #333333;">&nbsp;</td>
 	</tr>
